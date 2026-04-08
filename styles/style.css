@@ -1,35 +1,112 @@
-html {
-  font-size: 20px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
-  font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
+:root {
+    --bg-color: #fafafa;
+    --text-main: #222222;
+    --text-muted: #777777;
+    --link-color: #111111;
+    --link-hover: #555555;
+    --border-line: #e5e5e5;
 }
 
-.main-container {
-  flex-direction: row;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.left-column-container {
-  flex-direction: row;
+body {
+    font-family: "Georgia", "Songti SC", "SimSun", serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
 }
 
-.mid-container {
-  flex-direction: row;
-  width: 800px;
-  margin: 0 auto;
-  background-color: #bbbbbb;
-  padding: 0 20px 20px 20px;
-  border: 3px solid black;
+/* Header & Navigation */
+.site-header {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--border-line);
+    padding-bottom: 2rem;
 }
 
-.head-container {
-  margin: auto;
+.site-header h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 1px;
 }
 
-h1 {
-  font-family: "Times New Roman", Times, serif;
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
-a {
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 1px;
+.site-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: var(--link-color);
+}
+
+/* Content Sections */
+.content-section {
+    margin-bottom: 4rem;
+}
+
+.content-section h2 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+.entry-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.entry-item {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+}
+
+.date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    min-width: 100px;
+    font-family: monospace;
+}
+
+.entry-link {
+    text-decoration: none;
+    color: var(--link-color);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.entry-link:hover {
+    border-bottom: 1px solid var(--link-hover);
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 6rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-line);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-align: center;
 }
