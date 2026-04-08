@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html lang="cn">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZCharlieBrown's World</title>
-    <link rel="icon" href="./assets/江南.jpg" type="image/x-icon" />
-    <link href="styles/style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- <img src="./assets/江南.jpg" alt="background" /> -->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZCharlieBrown | Personal Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>ZCharlieBrown</h1>
+        <p class="subtitle">Observation / Reflection / Archive</p>
+        <nav class="site-nav">
+            <a href="#diary">Diary</a>
+            <a href="#thoughts">Thoughts</a>
+            <a href="#study">Study</a>
+        </nav>
+    </header>
 
-    <div class="main-container">
-      <div class="mid-container">
-        <div class="head-container">
-          <h1><center>Welcome to ZCB's personal website</center></h1>
-        </div>
-        <div class="1-container">
-          <a
-            href="https://different-mahogany-b68.notion.site/49405eb58a88491ca466ee3eb8ac4b72?pvs=4"
-            ><center>医学细胞生物学</center></a
-          >
-          <a
-            href="https://different-mahogany-b68.notion.site/81a2a706071547ef971ac5e660d1613e?pvs=4"
-            ><center>医学生物化学与分子生物学</center></a
-          >
-          <a
-            href="https://different-mahogany-b68.notion.site/ef8e791d0f4344729aa44796806078d6?pvs=4"
-            ><center>《唐诗杂论》</center></a
-          >
-        </div>
-      </div>
-    </div>
-  </body>
+    <main class="content-wrapper">
+        <section id="diary" class="content-section">
+            <h2>Diary</h2>
+            <div class="entry-list">
+                <article class="entry-item">
+                    <span class="date">2026.04.08</span>
+                    <a href="#" class="entry-link">日常记录的拓扑</a>
+                </article>
+                <article class="entry-item">
+                    <span class="date">2026.04.01</span>
+                    <a href="#" class="entry-link">时间切片与备忘</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="thoughts" class="content-section">
+            <h2>Thoughts</h2>
+            <div class="entry-list">
+                <article class="entry-item">
+                    <span class="date">Essay</span>
+                    <a href="#" class="entry-link">景观社会与信息消费的逻辑重构</a>
+                </article>
+                <article class="entry-item">
+                    <span class="date">Note</span>
+                    <a href="#" class="entry-link">关于《偶像的黄昏》译本的比较阅读</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="study" class="content-section">
+            <h2>Study</h2>
+            <div class="entry-list">
+                <article class="entry-item">
+                    <span class="date">Research</span>
+                    <a href="#" class="entry-link">基于多模态数据的唇裂风险预测模型推演</a>
+                </article>
+                <article class="entry-item">
+                    <span class="date">Medical</span>
+                    <a href="#" class="entry-link">人工智能在龋齿检测中的应用前瞻</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 ZCharlieBrown. Hosted on GitHub Pages.</p>
+    </footer>
+</body>
 </html>
